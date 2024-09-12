@@ -1,0 +1,44 @@
+/* Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --primary-color-darkCyan: hsl(158, 36%, 37%);
+  --primary-color-cream: hsl(30, 38%, 92%);
+  --secondary-color-darkBlue: hsl(212, 21%, 14%);
+  --secondary-color-grayishBlue: hsl(228, 12%, 48%);
+  --secondary-color-white: hsl(0, 0%, 100%);
+
+  /* Font */
+  --font-size-base: 14px;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
