@@ -77,17 +77,20 @@ h2 {
   background-color: var(--secondary-color-white);
   width: 100%;
   max-width: 42.857rem;
-  min-height: 28.571rem;
-  display: flex;
+  height: auto;
+  margin: 2.857rem 1.429rem;
   border-radius: 1.071rem;
+  display: flex;
   overflow: hidden;
 }
 
-figure {
+.product-thumbnail-container {
   flex: 50%;
+  margin-block: 0;
+  margin-inline: 0;
 }
 
-.product-img {
+.product-thumbnail {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -96,4 +99,52 @@ figure {
 .product-detail {
   flex: 50%;
   padding: 2.143rem;
+}
+
+.product-price {
+  font-family: "Fraunces", sans-serif;
+  margin: 2.143rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.071rem;
+}
+
+.product-discount {
+  font-size: 2.286rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color-darkCyan);
+}
+
+.cart-btn {
+  background-color: var(--primary-color-darkCyan);
+  width: 100%;
+  padding: 1.071rem 0;
+  border: none;
+  color: var(--secondary-color-white);
+  border-radius: 0.714rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.714rem;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+}
+
+/* .cart-btn:hover {
+  background-color: hsl(158, 40%, 32%);
+} */
+
+.cart-btn:active {
+  background-color: hsl(158, 50%, 23%);
+}
+
+/* Responsive for max-width: 460px  */
+@media screen and (max-width: 32.857rem) {
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-thumbnail {
+    max-height: 23.571rem;
+  }
 }
